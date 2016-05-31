@@ -30,7 +30,7 @@ public class StopShift extends JavaPlugin implements Listener
             return;
         if(!e.getInventory().getTitle().equals("container.ee3:transmutationTablet"))
             return;
-        /* Need some test and will fix name */
+        /* Need some test and will fix name  No test for the moment*/
         if(!e.getInventory().getTitle().equals("container.ae2:craftingTerminal"))
             return;
         Player p = (Player) e.getWhoClicked();
