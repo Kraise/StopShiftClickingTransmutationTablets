@@ -30,8 +30,11 @@ public class StopShift extends JavaPlugin implements Listener
             return;
         if(!e.getInventory().getTitle().equals("container.ee3:transmutationTablet"))
             return;
+        /* Need some test and will fix name */
+        if(!e.getInventory().getTitle().equals("container.ae2:craftingTerminal"))
+            return;
         Player p = (Player) e.getWhoClicked();
-        p.sendMessage(ChatColor.RED + "Do not shift click transmutation tablets!");
+        p.sendMessage(ChatColor.RED + "Do not shift click transmutation tablets or crafting terminal!");
         Vector v = new Vector();
         v.setX(5.0);
         v.setZ(5.0);
